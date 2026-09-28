@@ -1465,3 +1465,18 @@ h2 {
         background: #000;
     }
 }
+@media (max-width: 600px) {
+    #gardenNext {
+        position: relative;
+        z-index: 100;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    #scene-interactive {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 50px;
+    }
+}
