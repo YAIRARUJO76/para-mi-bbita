@@ -1466,17 +1466,25 @@ h2 {
     }
 }
 @media (max-width: 600px) {
+    #scene-interactive {
+        overflow: hidden;
+    }
+
     #gardenNext {
-        position: relative;
-        z-index: 100;
-        margin-top: 25px;
-        margin-bottom: 40px;
+        position: fixed !important;
+        right: 20px !important;
+        bottom: 25px !important;
+        z-index: 9999 !important;
+        margin: 0 !important;
         display: block;
     }
 
-    #scene-interactive {
-        overflow-y: auto;
-        overflow-x: hidden;
+    #gardenNext.visible {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: translateY(0) !important;
+    }
+}
         padding-bottom: 50px;
     }
 }
